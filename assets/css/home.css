@@ -97,12 +97,12 @@
 
 .more-btn {
     display: inline-block;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: var(--black);
     font-weight: 500;
     border: 1px solid var(--black);
     border-radius: 50px;
-    padding: 1.3rem 2.5rem;
+    padding: 1.5rem 3rem;
     text-align: center;
     margin-top: 1.5rem;
     transition: all 0.3s ease;
@@ -142,6 +142,95 @@
 }
 
 
+
+
+/* History Section */
+.history-wrapper {
+    background-image: url('../images/home/bg-image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.history-wrapper .bg-overlay {
+    background-color: rgba(74, 42, 126, 0.7);
+}
+
+.history-box {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+}
+
+.history-box h6 {
+    color: var(--orange);
+    font-size: 16px;
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+.history-box h1 {
+    color: var(--white);
+    font-size: 30px;
+    padding-bottom: 4px;
+    font-weight: bolder;
+}
+
+
+.history-box p {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+.counter-icons svg {
+    fill: var(--white);
+    height: 70px;
+    width: 70px;
+}
+
+
+.counter-digit {
+    color: var(--orange);
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.counter-title {
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.apply-box {
+    background-color: var(--orange);
+    padding: 30px 30px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -38px;
+}
+
+.apply-box h1{
+    font-size: 18px;
+}
+
+.apply-btn {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+
+
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 
@@ -176,6 +265,19 @@
 
     .about-img {
         padding: 3%;
+    }
+
+
+    /* history css */
+    .apply-box {
+        padding: 20px 25px;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .apply-box h1{
+        text-align: center;
     }
 
 }
