@@ -29,15 +29,16 @@
 
 .content-box p {
     padding-bottom: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     color: rgba(0, 0, 0, .5);
-    line-height: 2.2rem;
+    /* line-height: 2.2rem; */
 }
 
 .content-box .enrolbtn {
     font-size: 1.7rem;
     padding: 1.3rem 3rem;
     border-radius: 3rem;
+    transition: background-color 0.3s ease;
 }
 
 .content-box .enrolbtn:hover {
@@ -86,6 +87,60 @@
     right: 6rem;
 }
 
+.about-box {
+    max-width: 80%;
+}
+
+.about-box p {
+    text-align: justify;
+}
+
+.more-btn {
+    display: inline-block;
+    font-size: 2.3rem;
+    color: var(--black);
+    font-weight: 500;
+    border: 1px solid var(--black);
+    border-radius: 50px;
+    padding: 1.3rem 2.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.more-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.about-img {
+    border-radius: 2.4rem;
+    width: 100%;
+    padding: 8%;
+}
+
+.about-img:hover {
+    animation: zoomInOut 1.2s infinite ease-in-out;
+
+}
+
+
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.20);
+        /* Adjust scale as needed */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -93,6 +148,11 @@
     .img-container .stack-img {
         right: -20%;
         top: 50%;
+    }
+
+
+    .content-box p {
+        font-size: 13px;
     }
 
 }
@@ -105,10 +165,17 @@
         top: 80%;
     }
 
+    .content-box {
+        max-width: 100%;
+    }
+
 
     .section-wrapper {
         padding-bottom: 330px;
     }
 
+    .about-img {
+        padding: 3%;
+    }
 
 }

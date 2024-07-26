@@ -124,6 +124,7 @@ html {
     background-color: var(--blue);
     color: var(--white);
     border: 2px solid var(--blue);
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover,
@@ -547,6 +548,7 @@ html {
         font-size: 1.2rem;
     }
 
+
 }
 
 
@@ -564,6 +566,13 @@ html {
         display: block;
     }
 
+    .menu-wrapper {
+        padding: 8px 0;
+    }
+
+    .bar-icons {
+        font-size: 25px;
+    }
 
 }
 
