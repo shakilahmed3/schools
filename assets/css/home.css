@@ -216,7 +216,7 @@
     margin-bottom: -38px;
 }
 
-.apply-box h1{
+.apply-box h1 {
     font-size: 18px;
 }
 
@@ -228,6 +228,111 @@
     border-radius: 5px;
     font-weight: bold;
     text-wrap: nowrap;
+}
+
+
+/* .Choose institue */
+.choose-wrapper {
+    background-color: #e6e6e6;
+    padding: 8rem 0;
+}
+
+
+.tab-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.tab-img .img3 {
+    height: 453px;
+}
+
+.tab-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-wrapper .tab-btn {
+    padding: 24px 40px 24px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    background-color: #f7f7f7;
+}
+
+.tab-wrapper .active {
+    background-color: var(--white);
+}
+
+
+.tab-content-wrapper {
+    background-color: var(--white);
+    padding: 30px 20px
+}
+
+
+.tab-content h1 {
+    font-size: 25px;
+    color: var(--blue);
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+
+.tab-content p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.tab-content ul {
+    list-style-type: decimal;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.c1 {
+    height: 634px;
+}
+
+.c2 {
+    height: 453px;
+}
+
+.c3 {
+    height: 321px;
+}
+
+.c4 {
+    height: 281px;
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1399.98px) {
+    /* .Choose institue */
+
+    .tab-img .img1 {
+        height: 850px;
+    }
+
+    .tab-img .img2 {
+        height: 660px;
+    }
+
+    .tab-img .img3 {
+        height: 528px;
+    }
+
+    .tab-img .img4 {
+        height: 490px;
+    }
+
 }
 
 
@@ -276,8 +381,25 @@
         justify-content: center;
     }
 
-    .apply-box h1{
+    .apply-box h1 {
         text-align: center;
     }
+
+
+    /* .Choose institue */
+    .tab-wrapper .tab-btn {
+        padding: 15px 9px;
+        font-size: 14px;
+    }
+
+
+    .c1,
+    .c2,
+    .c3,
+    .c4 {
+        height: initial;
+    }
+
+
 
 }

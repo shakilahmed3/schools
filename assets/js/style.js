@@ -87,3 +87,17 @@ window.onload = () => {
     animateCounter('num6', 3000);
 }
 
+
+
+// Tab button Toggle
+
+$('.tab-btn').click(function () {
+    $('.tab-btn').removeClass('active'); // Remove 'active' class from all .tab-btn
+    $(this).addClass('active'); // Add 'active' class to the clicked .tab-btn
+
+    let tabClass = $(this).data('tabclass');
+
+    $('.tab-content').addClass('d-none')
+    $('.tab-img').addClass('d-none')
+    $(`.${tabClass}`).removeClass('d-none');
+});
